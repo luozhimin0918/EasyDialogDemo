@@ -1,6 +1,9 @@
 apply plugin: 'com.android.library'
 apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
-
+// 这个version是区分library版本的，因此当我们需要更新library时记得修改这个version
+version = "1.0.0"
+apply plugin: 'com.github.dcendents.android-maven'
+group="com.github.luozhimin0918"
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.1"
